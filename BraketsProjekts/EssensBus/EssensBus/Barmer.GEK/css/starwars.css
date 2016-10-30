@@ -1,0 +1,59 @@
+
+
+
+@keyframes starwars {
+    1%{
+        font-size: 40px;
+        position: relative;
+        top: 150px;
+        color: transparent;
+    }
+    15%{
+        color: transparent;
+    }
+    20%{
+        color: #f3c600;
+    }
+    90%{
+        font-size: 4px;
+        position: relative;
+        top: 100px;
+    }
+    100%{
+        font-size: 4px;
+        position: relative;
+        top: -100px;
+        /*color: transparent;*/
+    }
+}
+
+div#starwarstext p {
+    font-family: sans-serif;
+    text-align: center;
+    color: transparent;
+    margin: 0;
+    padding: 0px;
+    animation: starwars 20000ms;
+}
+
+div#starwarstext {
+    width: 700px;
+    height: 500px;
+    background-color: black;
+    border: solid 3px gray;
+    border-radius: 15px;
+}
+
+#startText {
+    cursor: pointer;
+    position: relative;
+    content: 'center';
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    font-size: 10px;
+    font-weight: bold;
+    color: #f3c600;
+    border: solid 3px gray;
+    border-radius: 10px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Kontakte</title>
+    <script type="text/javascript" src="lib/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/jquery/documentabfrage.js"></script>
+    <link rel="stylesheet" href="css/buchstyle.css"/>
+    <link rel="icon" href="bilder/bus.ico"/>
+    <link rel="stylesheet" href="css/kontaktformular.css"/>
+    <meta name="description" content="Kontaktformolar für Little Boxers">
+</head>
+<body>
+<div id="wrapper">
+    <div>
+        <div id="logobereich">
+            <img src="bilder/bus.png" id="logo" alt="little Boxes">
+        </div>
+        <div id="kopfteil">
+            <h1>
+                <p id="slogan">
+                    Webseiten gestallten mt HTML und CSS.
+            <span id="grundlagen">
+                Grundlagen
+            </span>
+                </p>
+            </h1>
+        </div>
+        <div id="navibereich">
+            <ul>
+                <li>
+                    <a  href="index.html">
+                        Startseite
+                    </a>
+                </li>
+                <li>
+                    <a href="kontakte.html">
+                        Kontakte
+                    </a>
+                </li>
+                <li>
+                    <a id="sind-hier" href="galerie.html">
+                        Galerie
+                    </a>
+                </li>
+                <li>
+                    <a href="snake.html">
+                        Snake
+                    </a>
+                </li>
+                <li>
+                    <a href="quiz.html">
+                        Quiz
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="seitelinks">
+        <h1 id="menu">Menü</h1>
+        <div id="seitennavibereich">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Startseite
+                    </a>
+                </li>
+                <li>
+                    <a href="kontakte.html">
+                        Kontakte
+                    </a>
+                </li>
+                <li>
+                    <a href="galerie.html">
+                        Galerie
+                    </a>
+                </li>
+                <li>
+                    <a href="snake.html">
+                        Snake
+                    </a>
+                </li>
+                <li>
+                    <a href="starwarstext.html">
+                        StarWars
+                    </a>
+                </li>
+                <li>
+                    <a href="quiz.html">
+                        Quiz
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="textbereich">
+        <h2>
+            Kontakteseite
+        </h2>
+        <!--todo hier irgendwann ein email dienst einrichten vieleicht über formular-Chef.de-->
+        <form id="kontaktformular" action="#">
+            <div>
+                <label for="besuchername">Ihr Name:</label>
+                <input type="text" id="besuchername" required/>
+            </div>
+            <div>
+                <label for="besucheremail">Ihre Email:</label>
+                <input type="email" id="besucheremail"/>
+            </div>
+            <div>
+                <label for="nachricht">Ihre Nachricht:</label>
+                <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Abschicken" m/>
+            </div>
+        </form>
+    </div>
+
+    <div id="flussbereich">
+        <address>
+            Little Boxes &middot; Fax: 1234 567891
+        </address>
+        Tel: 0123456 78910112
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+div#navibereich {
+    font-size: smaller;
+    text-align: right;
+    color: black;
+    padding: 5px 20px 0px 20px;
+    /*border-bottom: 1px solid #8c8c8c;*/
+    background-color: #f3c600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+    border-radius: 0 0 5px 5px;
+    border-left: 3px solid #8c8c8c ;
+    border-right: 3px solid #8c8c8c ;
+}
+
+div#navibereich a {
+    color: black;
+    background-color: #ffeda0;
+    padding: 4px 8px 4px 8px;
+    border: 1px solid #8c8c8c;
+    margin-bottom: 0px;
+}
+
+div#navibereich a:hover,
+div#navibereich a:focus {
+    color: black;
+    background-color: white;
+    border-bottom-color: white;
+}
+
+div#navibereich li {
+    margin-bottom: 0px;
+}
+
+div#navibereich li a#sind-hier {
+    color: black;
+    background-color: white;
+    border-bottom-color: white;
+}
+div#navibereich li {
+    margin-right: -5px;
+    display: inline;
+    list-style-type: none;
+}
+

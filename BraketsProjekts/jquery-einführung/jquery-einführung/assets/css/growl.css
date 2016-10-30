@@ -1,0 +1,17 @@
+#growl-container{
+    display: block;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+.growl{
+    display: block;
+    border: 1px solid black;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: white;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.5);
+    
+}

@@ -1,0 +1,23 @@
+table {
+    background-color: black;
+    /*
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
+*/
+}
+
+td {
+    background-color: tan;
+    border-color: transparent;
+    border-width: 5px;
+    border-style: solid;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 80px;
+}
+
+td span {
+    cursor: pointer
+}

@@ -1,0 +1,26 @@
+
+
+input{
+    border: solid 3px black;
+    border-radius: 15px;
+    background-color: lightgray;
+    color: black;
+}
+
+#slideshow{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    background-color: darkgray;
+    border: solid 5px black;
+    border-radius: 15px;
+}
+
+#slideshow img{
+    background-color: black;
+    border: solid 2px black;
+}
+
+.loading{
+    opacity: 0;
+}

@@ -1,0 +1,25 @@
+form{
+    background-color: #eeeeee;
+    width: 320px;
+    padding: 2em;
+    line-height: 1.2;
+}
+label{
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0.25em;
+}
+input[type ="text"],
+input[type = "email"],
+textarea{
+    width: 280px;
+    padding: 0.25em;
+    margin-bottom: 1em;
+}
+textarea{
+    max-width: 100%;
+    min-height: 7em;
+}
+:focus{
+    background-color: #ffeda0;
+}

@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="frameWorks/styles/arduino-light.css">
+</head>
+
+<body>
+    <header>
+        <h1>Test Seite für alles</h1>
+        <ul>
+            <li>
+                <a href="#" id="linkStartSeite">Start Seite</a>
+            </li>
+            <li>
+                <a href="#" id="linkDownloadjs">Download.js</a>
+            </li>
+            <li>
+                <a href="#" id="debugDrivenDelovomentjs">DebugDrivenDelovoment.js</a>
+            </li>
+            <li>
+                <a href="#" id="browserjs">Browser.js</a>
+            </li>
+            <li>
+                <a href="#" id="sherejs">Sphere.js</a>
+            </li>
+            <li>
+                <a href="HTML/aFrame.html" id="linkAFramejs">A-Fraem.js</a>
+            </li>
+            <li>
+                <a href="JS/fileAPI.js" id="linkFilejs">FileAPI.js</a>
+            </li>
+        </ul>
+    </header>
+    <div id="fileAPI">hier kann man daten speichern im Browser</div>
+    <div id="divBrowser">
+        <div id="content">
+
+        </div>
+        <input type="button" value="<-">
+        <input type="button" value="->">
+        <input type="text" value="search.." id="suchenInhalt">
+        <input type="button" value="Go" id="goButton">
+    </div>
+    <div id="divDebugDrivenDelovomentjs">
+        <label for="console">console</label>
+        <textarea readonly id="console"></textarea>
+        <label for="code">code eingabe</label>
+        <input type="text" id="code" value="alert('hallo')" />
+        <input type="button" id="do" value="do" onclick="doCode()" />
+        <label for="textbox">der Code</label>
+        <textarea id="textbox">irgendwas</textarea>
+        <input id="create" type="button" value="File">
+        <a download="info.txt" id="downloadlink" style="display: none">Download</a>
+    </div>
+
+    <div id="divDownloadjs">
+        <div id="txtWrap">
+            <textarea id="txt">
+
+            </textarea>
+        </div>
+        <a href="" id="link" download="code.txt">Download Above Code</a>
+    </div>
+    <footer>
+        <div id="tag-cloud"></div>
+        <h6>create by max</h6>
+    </footer>
+    <!--hier werden die Scripts geladen-->
+    <script src="frameWorks/jquery-2.2.1.js"></script>
+    <script type="text/JavaScript" src="JS/anzeigeVerwalter.js"></script>
+    <script src="frameWorks/jquery.svg3dtagcloud.min.js"></script>
+    <script type="text/JavaScript" src="JS/download.js"></script>
+    <script src="JS/browser.js"></script>
+    <script src="JS/sphere.js"></script>
+</body>
+<script src="JS/debugDrivenDelovoment.js" id="jsCode"></script>
+
+</html>

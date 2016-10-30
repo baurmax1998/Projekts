@@ -1,0 +1,36 @@
+
+div#seitennavibereich li{
+list-style-type: none;
+}
+
+div#seitennavibereich a:hover,
+div#seitennavibereich a:focus {
+outline: none;
+border-bottom: 2px solid black;
+}
+
+div#seitennavibereich {
+    border-radius: 15px;
+    background-color: #ffeda0;
+    border-bottom: solid 3px black;
+    border-top: solid 3px black;
+}
+
+div#seitelinks a{
+    color: black;
+    font-size: 20px;
+}
+
+div#seitelinks {
+    width: 170px;
+    position: absolute;
+    top: 178px;
+    left: 20px;
+}
+
+h1#menu{
+    width: 17px;
+    position: relative;
+    top: 0px;
+    left: -150px;
+}

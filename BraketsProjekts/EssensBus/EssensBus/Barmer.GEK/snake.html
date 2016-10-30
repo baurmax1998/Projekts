@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Snake</title>
+    <script language="javascript" type="text/javascript" src="js/snake.js"></script>
+    <link rel="stylesheet" href="css/buchstyle.css"/>
+    <link rel="stylesheet" href="css/snake.css"/>
+    <link rel="icon" href="bilder/bus.ico" />
+    <meta name="description" content="Little Boxes führt Sie durch das Labyrind von HTML und CSS,
+    von den ersten Schritten bis zur professionell gestaltenten Website">
+</head>
+<body>
+<div id="wrapper">
+    <div>
+        <div id="logobereich">
+            <img src="bilder/bus.png" id="logo" alt="little Boxes" >
+        </div>
+        <div id="kopfteil">
+            <h1>
+                <p id="slogan">
+                    Webseiten gestallten mt HTML und CSS.
+            <span id="grundlagen">
+                Grundlagen
+            </span>
+                </p>
+            </h1>
+        </div>
+        <div id="navibereich">
+            <ul>
+                <li>
+                    <a  href="index.html">
+                        Startseite
+                    </a>
+                </li>
+                <li>
+                    <a href="kontakte.html">
+                        Kontakte
+                    </a>
+                </li>
+                <li>
+                    <a id="sind-hier" href="galerie.html">
+                        Galerie
+                    </a>
+                </li>
+                <li>
+                    <a href="snake.html">
+                        Snake
+                    </a>
+                </li>
+                <li>
+                    <a href="quiz.html">
+                        Quiz
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="seitelinks">
+        <h1 id="menu">Menü</h1>
+        <div id="seitennavibereich">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Startseite
+                    </a>
+                </li>
+                <li>
+                    <a href="kontakte.html">
+                        Kontakte
+                    </a>
+                </li>
+                <li>
+                    <a href="galerie.html">
+                        Galerie
+                    </a>
+                </li>
+                <li>
+                    <a href="snake.html">
+                        Snake
+                    </a>
+                </li>
+                <li>
+                    <a href="starwarstext.html">
+                        StarWars
+                    </a>
+                </li>
+                <li>
+                    <a href="quiz.html">
+                        Quiz
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="textbereich">
+        <h2>
+            Snake
+        </h2>
+
+        <p>
+            Hier kann man Snake Spielen. Man steuert mit W, A, S und D oder den Pfeiltasten. Die Regeln von Snake sollten allgemein bekannt sein;D
+        </p>
+
+        <div id="snake">
+            <table id="spielfeld">
+                <tr>
+                    <td id="aa"></td>
+                    <td id="ab"></td>
+                    <td id="ac"></td>
+                    <td id="ad"></td>
+                    <td id="ae"></td>
+                    <td id="af"></td>
+                    <td id="ag"></td>
+                    <td id="ah"></td>
+                    <td id="ai"></td>
+                    <td id="aj"></td>
+                    <td id="ak"></td>
+                    <td id="al"></td>
+                    <td id="am"></td>
+                    <td id="an"></td>
+                </tr>
+                <tr>
+                    <td id="ba"></td>
+                    <td id="bb"></td>
+                    <td id="bc"></td>
+                    <td id="bd"></td>
+                    <td id="be"></td>
+                    <td id="bf"></td>
+                    <td id="bg"></td>
+                    <td id="bh"></td>
+                    <td id="bi"></td>
+                    <td id="bj"></td>
+                    <td id="bk"></td>
+                    <td id="bl"></td>
+                    <td id="bm"></td>
+                    <td id="bn"></td>
+                </tr>
+                <tr>
+                    <td id="ca"></td>
+                    <td id="cb"></td>
+                    <td id="cc"></td>
+                    <td id="cd"></td>
+                    <td id="ce"></td>
+                    <td id="cf"></td>
+                    <td id="cg"></td>
+                    <td id="ch"></td>
+                    <td id="ci"></td>
+                    <td id="cj"></td>
+                    <td id="ck"></td>
+                    <td id="cl"></td>
+                    <td id="cm"></td>
+                    <td id="cn"></td>
+                </tr>
+                <tr>
+                    <td id="da"></td>
+                    <td id="db"></td>
+                    <td id="dc"></td>
+                    <td id="dd"></td>
+                    <td id="de"></td>
+                    <td id="df"></td>
+                    <td id="dg"></td>
+                    <td id="dh"></td>
+                    <td id="di"></td>
+                    <td id="dj"></td>
+                    <td id="dk"></td>
+                    <td id="dl"></td>
+                    <td id="dm"></td>
+                    <td id="dn"></td>
+                </tr>
+
+                <tr>
+                    <td id="ea"></td>
+                    <td id="eb"></td>
+                    <td id="ec"></td>
+                    <td id="ed"></td>
+                    <td id="ee"></td>
+                    <td id="ef"></td>
+                    <td id="eg"></td>
+                    <td id="eh"></td>
+                    <td id="ei"></td>
+                    <td id="ej"></td>
+                    <td id="ek"></td>
+                    <td id="el"></td>
+                    <td id="em"></td>
+                    <td id="en"></td>
+                </tr>
+                <tr>
+                    <td id="fa"></td>
+                    <td id="fb"></td>
+                    <td id="fc"></td>
+                    <td id="fd"></td>
+                    <td id="fe"></td>
+                    <td id="ff"></td>
+                    <td id="fg"></td>
+                    <td id="fh"></td>
+                    <td id="fi"></td>
+                    <td id="fj"></td>
+                    <td id="fk"></td>
+                    <td id="fl"></td>
+                    <td id="fm"></td>
+                    <td id="fn"></td>
+                </tr>
+                <tr>
+                    <td id="ga"></td>
+                    <td id="gb"></td>
+                    <td id="gc"></td>
+                    <td id="gd"></td>
+                    <td id="ge"></td>
+                    <td id="gf"></td>
+                    <td id="gg"></td>
+                    <td id="gh"></td>
+                    <td id="gi"></td>
+                    <td id="gj"></td>
+                    <td id="gk"></td>
+                    <td id="gl"></td>
+                    <td id="gm"></td>
+                    <td id="gn"></td>
+                </tr>
+                <tr>
+                    <td id="ha"></td>
+                    <td id="hb"></td>
+                    <td id="hc"></td>
+                    <td id="hd"></td>
+                    <td id="he"></td>
+                    <td id="hf"></td>
+                    <td id="hg"></td>
+                    <td id="hh"></td>
+                    <td id="hi"></td>
+                    <td id="hj"></td>
+                    <td id="hk"></td>
+                    <td id="hl"></td>
+                    <td id="hm"></td>
+                    <td id="hn"></td>
+                </tr>
+                <tr>
+                    <td id="ia"></td>
+                    <td id="ib"></td>
+                    <td id="ic"></td>
+                    <td id="id"></td>
+                    <td id="ie"></td>
+                    <td id="if"></td>
+                    <td id="ig"></td>
+                    <td id="ih"></td>
+                    <td id="ii"></td>
+                    <td id="ij"></td>
+                    <td id="ik"></td>
+                    <td id="il"></td>
+                    <td id="im"></td>
+                    <td id="in"></td>
+                </tr>
+                <tr>
+                    <td id="ja"></td>
+                    <td id="jb"></td>
+                    <td id="jc"></td>
+                    <td id="jd"></td>
+                    <td id="je"></td>
+                    <td id="jf"></td>
+                    <td id="jg"></td>
+                    <td id="jh"></td>
+                    <td id="ji"></td>
+                    <td id="jj"></td>
+                    <td id="jk"></td>
+                    <td id="jl"></td>
+                    <td id="jm"></td>
+                    <td id="jn"></td>
+                </tr>
+                <tr>
+                    <td id="ka"></td>
+                    <td id="kb"></td>
+                    <td id="kc"></td>
+                    <td id="kd"></td>
+                    <td id="ke"></td>
+                    <td id="kf"></td>
+                    <td id="kg"></td>
+                    <td id="kh"></td>
+                    <td id="ki"></td>
+                    <td id="kj"></td>
+                    <td id="kk"></td>
+                    <td id="kl"></td>
+                    <td id="km"></td>
+                    <td id="kn"></td>
+                </tr>
+                <tr>
+                    <td id="la"></td>
+                    <td id="lb"></td>
+                    <td id="lc"></td>
+                    <td id="ld"></td>
+                    <td id="le"></td>
+                    <td id="lf"></td>
+                    <td id="lg"></td>
+                    <td id="lh"></td>
+                    <td id="li"></td>
+                    <td id="lj"></td>
+                    <td id="lk"></td>
+                    <td id="ll"></td>
+                    <td id="lm"></td>
+                    <td id="ln"></td>
+                </tr>
+                <tr>
+                    <td id="ma"></td>
+                    <td id="mb"></td>
+                    <td id="mc"></td>
+                    <td id="md"></td>
+                    <td id="me"></td>
+                    <td id="mf"></td>
+                    <td id="mg"></td>
+                    <td id="mh"></td>
+                    <td id="mi"></td>
+                    <td id="mj"></td>
+                    <td id="mk"></td>
+                    <td id="ml"></td>
+                    <td id="mm"></td>
+                    <td id="mn"></td>
+                </tr>
+                <tr>
+                    <td id="na"></td>
+                    <td id="nb"></td>
+                    <td id="nc"></td>
+                    <td id="nd"></td>
+                    <td id="ne"></td>
+                    <td id="nf"></td>
+                    <td id="ng"></td>
+                    <td id="nh"></td>
+                    <td id="ni"></td>
+                    <td id="nj"></td>
+                    <td id="nk"></td>
+                    <td id="nl"></td>
+                    <td id="nm"></td>
+                    <td id="nn"></td>
+                </tr>
+            </table>
+
+            <input id="start" type="button" value="ON" onclick="start()"/>
+            <input type="button" value="OFF" onclick="reset()" />
+
+
+        </div>
+    </div>
+    <div id="flussbereich">
+        <address>
+            Little Boxes &middot; Fax: 1234 567891
+        </address>
+        Tel: 0123456 78910112
+    </div>
+    </div>
+</div>
+</body>
+</html>

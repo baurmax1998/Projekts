@@ -1,0 +1,166 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>Qery einführung</title>
+        <link rel="stylesheet" href="assets/css/theme.css">
+        <link rel="stylesheet" href="assets/css/dragAndDrop.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="link2.html" 
+                       data-info= "Eine -Seite!"
+                       data-target="main"
+                       data-format="HTML">Link zum HTML</a></li>
+                <li><a href="data.json"  
+                       data-info= "Eine -Seite!"
+                       data-target="aside"
+                       data-format="json">JSON Daten</a></li>
+                <li><a href="data.xml"   
+                       data-info= "Eine -Seite!"
+                       data-target="main>#xml"
+                       data-format="xml" >XML Daten</a></li>
+                <li><a href="script.js"  
+                       data-info= "Eine -Seite!"
+                       data-target="none"
+                       data-format="js">JavaScript nachladen</a></li>
+
+            </ul>
+        </nav>
+        
+        <aside>
+            <form id="form-login">
+                <fieldset>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="" placeholder="Ihre Email..">
+                </div>
+                <div>
+                    <label for="passwort">Passwort</label>
+                    <input id="passwort" type="password" name="passwort" value="" placeholder="Ihr Passwort">
+                </div>
+                <div>
+                    <input id="terms" type="checkbox" name="terms" value="accepted">
+                    <label for="terms">AGBs akzeptieren</label>
+                </div>
+                    <button type="submit">los</button>
+                </fieldset>
+            </form>
+        </aside>
+        <div id="main">
+        </div>
+        
+        hello
+        <article>
+            <p>aklsdjfaklsdfjasldfjaslkdfjalsödkfjasklödfjslödfjasdlöf</p>
+            <p>asldkfjaslödfjkasldöfjasdklfjalösdfjasdlökfjasdklöfjsal</p>
+            <p>0ökasjdflaösdfkljjlöfaskdjfalsdfjaslkdfjlasdkfjsldakjfa</p>
+        </article>
+        <article id="articel2">
+            <p>aklsdjfaklsdfjasldfjaslkdfjalsödkfjasklödfjslödfjasdlöf</p>
+            <p>asldkfjaslödfjkasldöfjasdklfjalösdfjasdlökfjasdklöfjsal</p>
+            <p>0ökasjdflaösdfkljjlöfaskdjfalsdfjaslkdfjlasdkfjsldakjfa</p>
+        </article>
+            
+        <button class="continue">alterText</button>
+        
+        <div id="dragDropWrapper">
+            <div id="dragItems">
+                <div class="dragItem">1</div>
+                <div class="dragItem">2</div>
+                <div class="dragItem">3</div>
+                <div class="dragItem">4</div>
+                <div class="dragItem">5</div>
+                <div class="dragItem">6</div>
+            </div>
+            <div id="dropArea"></div>
+        </div>
+        <script src="lib/jquery-2.2.0.js"></script>
+        <script src="lib/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+<!--        <script src="assets/js/blockpattern.js"></script>-->
+<!--        <script src="assets/js/domManipulation.js"></script>-->
+<!--        <script src="assets/js/eventhandling.js"></script>-->
+<!--        <script src="assets/js/repuest.js"></script>-->
+        <script src="assets/js/growl.js"></script>
+        <script>
+            //plug in anfang
+            (function($){
+                "use strict";
+                var 
+                    _showIcon = function(){},
+                    _hideIcon = function(){}
+                ;
+                _showIcon = function(event){ $(event.target).prepend("<span class='close'>x</span>") };
+                _hideIcon = function(event){ $(event.target).find("span.close").remove() };
+                
+                $.fn.closeable = function(){
+                    //pluginCode
+                    
+                    
+                    
+                    return this.each(function(index, item){
+                        $(item).on("mouseenter", _showIcon );
+                        $(item).on("mouseleave", _hideIcon );
+                    });
+                };
+                
+            })(jQuery);
+            
+            
+            //plugin ende
+            
+            $(document).ready( function(){
+               "use strict"
+               
+               var 
+                    dragItem = $(".dragItem"),
+                    dropArea = $("#dropArea")
+               ;
+                
+                dragItem.draggable({
+                    scope: "myScope",
+                    revert : true,
+                    create: function(){
+                        console.log("Eine Medung");
+                    },
+                    start: function(){
+                        console.log("Eine Medung");
+                    },
+                    drag:function(){
+                        console.log("Eine Medung");
+                    },
+                    containment : $("body")
+                });
+                dropArea.droppable({
+                    scope :"myScope",
+                    hoverClass : "drop-area-hover",
+                    activeClass :"drop-area-active",
+                    create: function(){
+                        console.log("Eine Medung");
+                    },
+                    activate: function(){
+                        console.log("Eine Medung");
+                    },
+                    deactivate: function(){
+                        console.log("Eine Medung");
+                    },
+                    over: function(){console.log("Eine Medung");
+                        console.log("Eine Medung");
+                    },
+                    out: function(){
+                        console.log("Eine Medung");
+                    },
+                    drop: function(event, ui){
+                        ui.draggable.css({left:0})
+                        $(event.target).append(ui.draggable);
+                        console.log("Eine Medung"); 
+                    }
+                });
+                dragItem.closeable();
+
+                
+            });
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<script src="http://code.jquery.com/jquery-latest.js">
+</script>
+<script>
+    var webmax = webmax || {};
+    $(document).ready(function () {
+
+        webmax.sageHallo = function () {
+            alert("hallo");
+        };
+
+
+
+        var jqxhr = $.getJSON("index.json", function () {
+                console.log("success");
+            })
+            .done(function () {
+                console.log("second success");
+            })
+            .fail(function () {
+                console.log("error");
+            })
+            .always(function () {
+                console.log("complete");
+            });
+
+        $("body").append($("<h1>").text("hallo"));
+
+    });
+</script>

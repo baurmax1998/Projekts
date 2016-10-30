@@ -1,0 +1,1 @@
+F:\Programmieren\Tools\node\nwjs-v0.14.3-win-x64\nw.exe F:\Programmieren\Projekts\BraketsProjekts\test_node_wb

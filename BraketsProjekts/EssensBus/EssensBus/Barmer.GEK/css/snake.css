@@ -1,0 +1,24 @@
+
+table#spielfeld{
+    margin: 0;
+    border: solid 3px black;
+    border-radius: 15px;
+}
+table#spielfeld td{
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+}
+table#spielfeld tr{
+    margin: 0;
+    padding: 0;
+}
+table#spielfeld td.feld{
+    background-color: lightgray;
+}
+table#spielfeld td.kopf{
+    background-color: green;
+}
+table#spielfeld td.essen{
+    background-color: red;
+}

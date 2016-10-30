@@ -1,0 +1,17 @@
+
+.bar{
+    border: solid 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f3c600;
+    width: 50%;
+    margin-bottom: 0;
+}
+.content{
+    border: solid 2px gray;
+    border-top: 0;
+    border-radius: 5px;
+    margin-top: 0;
+    background-color: #ffeda0;
+    width: 50%;
+}
