@@ -1,0 +1,125 @@
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    background: #f4f5fc;
+}
+
+#header{
+/*    box-shadow:1px 1px 1px 1px lightgrey;*/
+    
+/*    background: #EEFFF5;*/
+    color: black;
+    width: 100%;
+    background: #007bff;
+}
+
+
+#logo{
+/*    float: left;*/
+    margin: 10px;
+}
+
+#riter button{
+    background: #ffffff;
+    width   : 80px;
+    height: 20px;
+/*    cursor  : pointer;*/
+    font-family : 'voltaeftu-regular',Times New Roman;
+    font-size   : 16px;
+/*    color   : #fff;*/
+    border  : none;
+    margin      : 0px;
+    padding     : 0px;
+    
+    margin-top: 15px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+#riter{
+    
+}
+
+#anmeldungButton{
+    float: right;
+}
+
+.h1{
+    font-size: 35px;
+}
+
+.h2{
+    font-size: 200%;
+}
+
+.auto{
+    cursor: pointer;
+    background: #fff;
+/*    box-shadow: 3px 4px 5px #c9c9c9;*/
+    margin: 15px;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    padding: 10px;
+    float: left;
+    max-width: 350px;
+    width: auto;
+    min-width: 250px;
+}
+
+
+
+
+.beschreibung{
+    float: left;
+    width: 70%;
+}
+
+.wert{
+    width: 30%;
+    float: right;
+}
+
+#notiz-ferig{
+    margin-left: 80%;
+    margin-bottom: 4px;
+}
+
+#searchDiv{
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background: red;
+    
+}
+.sucheingaben{
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+}
+
+.titelBild {
+    height: 128px;
+    max-width: 128px;
+}
+
+ul { 
+    list-style: none;
+}
+
+#eingabe-box-unselected{
+}
+
+#titel-eingabe{
+    background: lightgray;
+}
+
+#beschreibung-eingabe{
+    background: lightgray;
+    
+}
+
+#deko-eingabe{
+    background: lightgray;
+}

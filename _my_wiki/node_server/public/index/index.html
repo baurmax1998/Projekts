@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jQuery-TE_v.1.4.0/jquery-te-1.4.0.css">
+    <link rel="stylesheet" href="secretnav/jquery.secretnav.css">
+    <link rel="stylesheet" href="nav_circle/styles.css">
+    <script src="assets/autos.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="jQuery-TE_v.1.4.0/jquery-te-1.4.0.min.js"></script>
+    <script src="secretnav/jquery.secretnav.js"></script>
+    <script src="secretnav/modernizr.custom.25376.js"></script>
+    <script src="nav_circle/main.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!--
+    <div id="header">
+    <div class="h1">MY_Wiki</div>
+</div>
+-->
+    <div id="body">
+        <div id="overview">
+            <ul id="modelleDiv"></ul>
+        </div>
+        <div id="editor_div">
+            <!--            <input type="button" title="click" id="clickMe" value="Editor AN/AUS">-->
+            <div id="content" aktiv="true">
+                hallo das klappt hier echt gut
+            </div>
+            <textarea id="editor">
+            </textarea>
+        </div>
+        <ul id="navs" data-open="close" data-close="open">
+            <li><a id="secretNav" href="#">secret</a></li>
+            <li><a id="clickMe" href="#">editor</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+        </ul>
+    </div>
+    <nav id="nav">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">FAQ</a>
+    </nav>
+
+
+    <script>
+        $(function () {
+            $('#body').SecretNav({
+                navSelector: '#nav'
+                , openSelector: '#secretNav'
+                , position: 'top'
+            });
+        });
+    </script>
+</body>
+
+</html>
